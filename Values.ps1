@@ -99,7 +99,7 @@ foreach ($line in $lines) {
         $key.SetAccessControl($acl)
 
         # Delete key
-        Remove-Item -LiteralPath $regPath -Recurse -Force -ErrorAction Stop
+       # Remove-Item -LiteralPath $regPath -Recurse -Force -ErrorAction Stop
 
         $keysDeleted++
     } catch {
@@ -108,4 +108,4 @@ foreach ($line in $lines) {
     }
 }
 
-Write-Output "Registry keys deleted: $keysDeleted"
+#Write-Output "Registry keys deleted: $keysDeleted"
